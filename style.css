@@ -1,0 +1,99 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5; /* Color de fondo suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Asegura que ocupe al menos el alto de la ventana */
+    margin: 0;
+    color: #333;
+}
+
+.linktree-container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 30px 20px;
+    width: 100%;
+    max-width: 400px; /* Ancho máximo para la vista de escritorio */
+    text-align: center;
+    box-sizing: border-box; /* Incluye padding y borde en el ancho */
+}
+
+.profile-section {
+    margin-bottom: 30px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #0e12da; /* Borde alrededor de la foto */
+}
+
+h1 {
+    font-size: 1.8em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+p {
+    font-size: 1em;
+    color: #666;
+    margin-top: 0;
+}
+
+.links-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre los botones */
+}
+
+.link-button {
+    display: block;
+    background-color: #67359a; /* Color principal de los botones */
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.link-button:hover {
+    background-color: #8451c0; /* Color al pasar el mouse */
+    transform: translateY(-2px); /* Pequeño efecto de elevación */
+}
+
+.link-button:active {
+    transform: translateY(0); /* Efecto de clic */
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media (max-width: 600px) {
+    .linktree-container {
+        border-radius: 0; /* Eliminar bordes redondeados en móviles */
+        box-shadow: none; /* Eliminar sombra en móviles */
+        padding: 20px 15px;
+        max-width: 100%; /* Ocupar todo el ancho disponible */
+        min-height: 100vh; /* Ocupar toda la altura en móviles */
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    .link-button {
+        font-size: 1em;
+        padding: 12px 15px;
+    }
+}
